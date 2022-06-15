@@ -1,0 +1,71 @@
+                                                         /* START OF CODE */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #29415c;
+}
+
+.inputBox {
+  position: relative;
+  width: 250px;
+  display: grid;
+  gap: 30px;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #29415c;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.inputBox label {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 1em;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.inputBox input:valid ~ label,
+.inputBox input:focus ~ label {
+  color: #00ffe1;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #29415c;
+  border-left: 1px solid #00ffe1;
+  border-right: 1px solid #00ffe1;
+  letter-spacing: 0.2em;
+}
+
+.inputBox:nth-child(1) input:valid ~ label,
+.inputBox:nth-child(2) input:focus ~ label {
+  background: #00ffe1;
+  color: #29415c;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 1px solid #00ffe1;
+} 
+                                                                  /* END OF CODE */
